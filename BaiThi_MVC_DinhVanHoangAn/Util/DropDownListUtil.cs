@@ -102,29 +102,29 @@ namespace BaiThi_MVC_DinhVanHoangAn.Util
         public static List<SelectListItem> GetSubjectsAsDropDownList()
         {
             List<SelectListItem> list = new List<SelectListItem>();
-            List<ExamSubject> lstSub = new List<ExamSubject>()
-            {
-                new ExamSubject()
-                {
-                    Id = 1,
-                    Name = "CoreJava"
-                },
-                new ExamSubject()
-                {
-                    Id = 2,
-                    Name = "AdvanceJava"
-                },
-                new ExamSubject()
-                {
-                    Id = 3,
-                    Name = "ProgrammingC"
-                },
+            //List<ExamSubject> lstSub = new List<ExamSubject>()
+            //{
+            //    new ExamSubject()
+            //    {
+            //        Id = 1,
+            //        Name = "CoreJava"
+            //    },
+            //    new ExamSubject()
+            //    {
+            //        Id = 2,
+            //        Name = "AdvanceJava"
+            //    },
+            //    new ExamSubject()
+            //    {
+            //        Id = 3,
+            //        Name = "ProgrammingC"
+            //    },
 
-            };
+            //};
 
             if (_listSub == null)
             {
-                _listSub = lstSub;
+                _listSub = GetSubs();
             }
 
             foreach (var item in _listSub)
@@ -137,29 +137,29 @@ namespace BaiThi_MVC_DinhVanHoangAn.Util
         public static List<SelectListItem> GetClassesAsDropDownList()
         {
             List<SelectListItem> list = new List<SelectListItem>();
-            List<ClassRoom> lstClass = new List<ClassRoom>()
-            {
-                new ClassRoom()
-                {
-                    Id = 1,
-                    Name = "B10"
-                },
-                new ClassRoom()
-                {
-                    Id = 2,
-                    Name = "B16"
-                },
-                new ClassRoom()
-                {
-                    Id = 3,
-                    Name = "B14"
-                },
+            //List<ClassRoom> lstClass = new List<ClassRoom>()
+            //{
+            //    new ClassRoom()
+            //    {
+            //        Id = 1,
+            //        Name = "B10"
+            //    },
+            //    new ClassRoom()
+            //    {
+            //        Id = 2,
+            //        Name = "B16"
+            //    },
+            //    new ClassRoom()
+            //    {
+            //        Id = 3,
+            //        Name = "B14"
+            //    },
 
-            };
+            //};
 
             if (_listClass == null)
             {
-                _listClass = lstClass;
+                _listClass = GetClasses();
             }
 
             foreach (var item in _listClass)
@@ -172,29 +172,29 @@ namespace BaiThi_MVC_DinhVanHoangAn.Util
         public static List<SelectListItem> GetFacultiesAsDropDownList()
         {
             List<SelectListItem> list = new List<SelectListItem>();
-            List<Faculty> lstFaculty = new List<Faculty>()
-            {
-                new Faculty()
-                {
-                    Id = 1,
-                    Name = "Jaya"
-                },
-                new Faculty()
-                {
-                    Id = 2,
-                    Name = "John"
-                },
-                new Faculty()
-                {
-                    Id = 3,
-                    Name = "HienPA"
-                },
+            //List<Faculty> lstFaculty = new List<Faculty>()
+            //{
+            //    new Faculty()
+            //    {
+            //        Id = 1,
+            //        Name = "Jaya"
+            //    },
+            //    new Faculty()
+            //    {
+            //        Id = 2,
+            //        Name = "John"
+            //    },
+            //    new Faculty()
+            //    {
+            //        Id = 3,
+            //        Name = "HienPA"
+            //    },
 
-            };
+            //};
 
             if (_listFaculty == null)
             {
-                _listFaculty = lstFaculty;
+                _listFaculty = GetFaculties();
             }
 
             foreach (var item in _listFaculty)
